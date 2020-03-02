@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_15dp"
+    android:elevation="@dimen/elevation_8dp"
+    android:padding="@dimen/dimen_8dp"
+    app:cardCornerRadius="@dimen/dimen_5dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:paddingBottom="@dimen/dimen_15dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="118dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_begin="395dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_news_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:elevation="@dimen/elevation_8dp"
+            android:paddingTop="2dp"
+            app:cardCornerRadius="@dimen/dimen_5dp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/news_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_back_ground_drawable"
+                android:scaleType="centerCrop"
+
+
+                app:srcCompat="@drawable/ic_news_placeholder_small" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:ellipsize="end"
+            android:ems="2"
+            android:lines="2"
+            android:textStyle="bold"
+            android:text="Lorespum pum lor "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline2"
+            app:layout_constraintRight_toRightOf="@id/guideline_left"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_news_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:ellipsize="marquee"
+
+            android:ems="2"
+            android:lines="2"
+            android:padding="2dp"
+            android:text="Lorespum pum lor "
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/guideline2"
+            app:layout_constraintRight_toRightOf="@id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@id/tv_news_title" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <TextView
+            android:id="@+id/tv_news_cat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/dimen_25dp"
+
+            android:layout_marginRight="@dimen/dimen_25dp"
+            android:background="@drawable/textview_border"
+            android:ellipsize="end"
+            android:ems="2"
+            android:gravity="center"
+            android:lines="1"
+
+            android:textAllCaps="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline4"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_right"
+            app:layout_constraintRight_toRightOf="@id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+        <TextView
+            android:id="@+id/tv_news_link"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:ems="2"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="usNews "
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/guideline4"
+            app:layout_constraintLeft_toRightOf="@id/guideline2"
+
+            app:layout_constraintRight_toLeftOf="@id/tv_news_time"
+            app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+        <TextView
+            android:id="@+id/tv_news_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:ems="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:lines="1"
+            android:padding="@dimen/dimen_5dp"
+            android:text=""
+
+            android:textSize="12sp"
+
+            app:layout_constraintBottom_toBottomOf="@id/guideline4"
+            app:layout_constraintLeft_toRightOf="@id/tv_news_link"
+            app:layout_constraintRight_toRightOf="@id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="120dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
