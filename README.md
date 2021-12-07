@@ -6,4 +6,5 @@
 Architecture : MVVM 
 Reactive Paradigm : Kotlin Coroutine 
 
-I have Used Repository Pattern in which Data from Db is single source of truth :
+
+<img width="406" alt="Screenshot 2021-12-07 at 1 35 54 PM" src="https://user-images.githubusercontent.com/22367518/144990389-c865f29f-d008-4588-a531-fa139de36313.png">
