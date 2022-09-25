@@ -1,4 +1,8 @@
-# WeatherNewsApp.        arch:reac:language= MVVM:Coroutine:kotlin
+# WeatherNewsApp.        
+arch: MVVM
+concurrency framework: Coroutines 
+Language  : Kotlin 
+
  App Flow :
 1st Screen-Main Activity is News list Screen where weather data is availble as sticky on click on any news article you can see news
 2nd Screen- On CLick of any new article this screen is opened where news can be browsed in in app web-browser 
